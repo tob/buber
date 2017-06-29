@@ -1,7 +1,7 @@
 class Passenger
   attr_accessor :first_name, :last_name, :age, :spacetaxi
 
-  def initialize(first_name, last_name, age)
+  def initialize(first_name = "name", last_name = "surname", age = "99")
 
     puts "Enter your name"
     @first_name = gets.chomp

@@ -21,11 +21,8 @@ class Buber
   #
   end
 
-  def accept_passenger
-    puts "Please enter your name"
-    
-    @passenger = gets.chomp
-
+  def accept_passenger(passenger)
+    @passenger = Passenger.new
   end
 
 end

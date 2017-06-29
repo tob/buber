@@ -18,3 +18,8 @@ puts "*"*40
 puts buber_one
 puts "*"*40
 buber_one.print_details
+puts "*"*40
+gigi = Passenger.new
+puts gigi
+puts "*"*40
+buber_one.print_details
