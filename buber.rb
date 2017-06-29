@@ -10,6 +10,9 @@ class Buber
     @spacetaxi.each do |taxi|
       puts  taxi.buber
     end
+    @passenger.each do |passenger|
+      puts  passenger.buber
+    end
   end
 
   def add_spacetaxi(spacetaxi)
@@ -18,10 +21,20 @@ class Buber
   end
 
   def run
-  #
+  puts "welcome to Buber"
+  accept_passenger
+  divider
+  puts "Here a list of available Space taxis"
+  @spacetaxi.each do |taxi|
+    puts  taxi.number
+  end
+  divider
+  puts "which taxi do you want to book? (A,B,C)"
+  @user_choice = gets.chomp
+  puts "thanks, taxi #{@user_choice} will arrive soon"
   end
 
-  def accept_passenger(passenger)
+  def accept_passenger
     @passenger = Passenger.new
   end
 

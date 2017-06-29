@@ -1,5 +1,5 @@
 class Spacetaxi
-  attr_accessor :buber, :passengers
+  attr_accessor :buber, :passengers, :number
 
   def initialize(buber = "", passengers = [])
     @buber = buber
@@ -13,5 +13,9 @@ class Spacetaxi
 
   def assign_buber(buber)
     @buber = buber
+  end
+
+  def add_number(number)
+    @number = number
   end
 end
